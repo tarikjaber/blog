@@ -4,7 +4,7 @@ html {
 }
 
 html.dark {
-    background-color: #0d0950;
+    background-color: #070F2B;
     color: #fff;
 }
 
@@ -64,7 +64,8 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #1B1A55;
+  border-radius: 10px;
 }
 
 .expanded {
@@ -89,3 +90,23 @@ h1 {
       display: none;
   }
 }
+
+/* tags */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag {
+    margin: 0.25em;
+    border: dotted 1px #a1a1a1;
+    border-radius: .5em;
+    padding: .5em 1em;
+    font-size: 1.15em;
+    background-color: #535C91;
+}
+
+.tag a {
+    color: #fff;
+}
+

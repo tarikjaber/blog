@@ -1,13 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import "../styles/global.css";
-import Greeting from '../components/Greeting';
 
 const pageTitle = "Index";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
   <p>Primary link</p>
   <script>
     import "../scripts/menu.js";
