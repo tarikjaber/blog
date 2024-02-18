@@ -1,16 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import "../styles/global.css";
+import Greeting from '../components/Greeting';
 
+const pageTitle = "Index";
 ---
 
-<Layout title="Welcome to Astro.">
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/blog">Blog</a>
-  
-  <h1>Index</h1>
+<BaseLayout pageTitle={pageTitle}>
+  <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
   <p>Primary link</p>
-</Layout>
+  <script>
+    import "../scripts/menu.js";
+  </script>
+</BaseLayout>
 
 <style>
 	main {
